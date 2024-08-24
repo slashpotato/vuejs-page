@@ -11,7 +11,7 @@
 
 <style scoped>
 .social-icons {
-    gap: 2px;
+    gap: 6px;
     display: flex;
 }
 
