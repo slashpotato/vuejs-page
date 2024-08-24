@@ -5,7 +5,7 @@ const count = ref(0)
 </script>
 
 <template>
-    <div class="gap-2 flex items-center h-fit w-fit justify-center">
+    <div class="gap-2 flex items-center w-fit h-screen m-auto justify-center">
         <span>{{ count }}</span>
         <button @click="count--" :disabled="count <= 0">-</button>
         <button @click="count++">+</button>
