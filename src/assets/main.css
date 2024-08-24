@@ -1,11 +1,65 @@
-@import './base.css';
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'Geologica';
+    font-style: normal;
+    font-weight: 500;
+    src: url(https://slfiles.vercel.app/fonts/GeologicaNerdFont-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'JetBrainsMono';
+    font-style: normal;
+    font-weight: 500;
+    src: url(https://slfiles.vercel.app/fonts/JetBrainsMonoNerdFontMono-Medium.ttf);
+    font-feature-settings: 'liga';
+    -webkit-font-feature-settings: 'liga';
+    -moz-font-feature-settings: 'liga';
+}
+
+@font-face {
+    font-family: 'Material Symbols Rounded';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://slfiles.vercel.app/fonts/MaterialSymbolsRounded.woff2) format('woff2');
+}
+
+.icon {
+    font-family: 'Material Symbols Rounded';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    font-feature-settings: 'liga';
+    -moz-font-feature-settings: 'liga';
+    -webkit-font-feature-settings: 'liga';
+    -moz-osx-font-smoothing: grayscale;
+}
+
 body {
-    @apply bg-white dark:bg-black transition-colors duration-300;
+    font-family: 'Geologica';
+    @apply bg-white dark:bg-black text-black dark:text-white transition-colors duration-300;
+}
+
+code,
+kbd,
+samp,
+pre,
+.mono {
+    font-family: 'JetBrainsMono';
+}
+
+button,
+a {
+    @apply cursor-pointer;
 }
 
 button {
